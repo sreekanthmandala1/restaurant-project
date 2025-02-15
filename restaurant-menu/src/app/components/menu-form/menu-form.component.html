@@ -1,0 +1,35 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-6">
+      <h2>Add Menu Item</h2>
+      <form [formGroup]="menuForm" (ngSubmit)="submitForm()">
+        <div class="mb-3">
+          <label>Name</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div class="mb-3">
+          <label>Price</label>
+          <input type="number" class="form-control" formControlName="price">
+        </div>
+        <div class="mb-3">
+          <label>description</label>
+          <input type="text" class="form-control" formControlName="description">
+        </div>
+        <div class="mb-3">
+          <label>Category</label>
+          <input type="text" class="form-control" formControlName="category">
+        </div>
+        <button class="btn btn-success" type="submit">{{updatedItem == 'update'  ? 'Update' : 'save'}}</button>
+      </form>
+    </div>
+    <div class="col-6">
+      <app-menu-list (menuItemSelected)="handleMenuItemSelected($event)" (updateSelected)="updateItemSelected($event)"></app-menu-list>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isLoading" class="d-flex justify-content-center">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
