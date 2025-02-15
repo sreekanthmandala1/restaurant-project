@@ -19,9 +19,9 @@ namespace RestaurantMenuAPI.Repositories
         //}
         public async Task<MenuItem> AddOrUpdateAsync(MenuItem menuItem)
         {
-            if (menuItem.Id == 0 || menuItem.Id == null)
+            if ( menuItem.Id == null)
             {
-                // **Create a new menu item**
+                
                 _context.MenuItems.Add(menuItem);
             }
             else
@@ -32,16 +32,16 @@ namespace RestaurantMenuAPI.Repositories
 
                 if (existingItem == null)
                 {
-                    // If ID is provided but not found in DB, treat it as a new entry
+                    
                     menuItem.Id = 0;
                     _context.MenuItems.Add(menuItem);
                 }
                 else
                 {
-                    // **Detach existing entity to prevent tracking conflicts**
+                   
                     _context.Entry(existingItem).State = EntityState.Detached;
 
-                    // **Attach & update**
+                    
                     _context.MenuItems.Update(menuItem);
                 }
             }
