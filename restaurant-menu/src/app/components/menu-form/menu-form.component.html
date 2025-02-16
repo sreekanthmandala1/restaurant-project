@@ -1,33 +1,59 @@
 <div class="container mt-2">
   <div class="row">
     <div class="col-6">
-      <h2>Add Menu Item</h2>
+      <h2>{{ updatedItem == 'update' ? 'Update' : 'Add' }} Menu Item</h2>
       <form [formGroup]="menuForm" (ngSubmit)="submitForm()">
+        
+        <!-- Name Field -->
         <div class="mb-3">
           <label>Name</label>
           <input type="text" class="form-control" formControlName="name">
+          <div class="text-danger" *ngIf="name?.invalid && (name?.touched || name?.dirty)">
+            <small *ngIf="name?.errors?.['required']">Name is required.</small>
+          </div>
         </div>
+
+        <!-- Price Field -->
         <div class="mb-3">
           <label>Price</label>
           <input type="number" class="form-control" formControlName="price">
+          <div class="text-danger" *ngIf="price?.invalid && (price?.touched || price?.dirty)">
+            <small *ngIf="price?.errors?.['required']">Price is required.</small>
+            <small *ngIf="price?.errors?.['min']">Price must be at least 1.</small>
+          </div>
         </div>
+
+        <!-- Description Field -->
         <div class="mb-3">
-          <label>description</label>
+          <label>Description</label>
           <input type="text" class="form-control" formControlName="description">
         </div>
+
+        <!-- Category Field -->
         <div class="mb-3">
           <label>Category</label>
           <input type="text" class="form-control" formControlName="category">
+          <div class="text-danger" *ngIf="category?.invalid && (category?.touched || category?.dirty)">
+            <small *ngIf="category?.errors?.['required']">Category is required.</small>
+          </div>
         </div>
-        <button class="btn btn-success" type="submit">{{updatedItem == 'update'  ? 'Update' : 'save'}}</button>
+
+        <!-- Submit Button -->
+        <button class="btn btn-success" type="submit" [disabled]="menuForm.invalid">
+          {{ updatedItem == 'update' ? 'Update' : 'Save' }}
+        </button>
       </form>
     </div>
+
+    <!-- Menu List -->
     <div class="col-6">
-      <app-menu-list (menuItemSelected)="handleMenuItemSelected($event)" (updateSelected)="updateItemSelected($event)"></app-menu-list>
+      <app-menu-list (menuItemSelected)="handleMenuItemSelected($event)" (updateSelected)="updateItemSelected($event)">
+      </app-menu-list>
     </div>
   </div>
 </div>
 
+<!-- Loading Spinner -->
 <div *ngIf="isLoading" class="d-flex justify-content-center">
   <div class="spinner-border text-primary" role="status">
     <span class="visually-hidden">Loading...</span>

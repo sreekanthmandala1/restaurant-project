@@ -20,7 +20,9 @@ export class MenuListComponent implements OnInit {
   }
 
   loadMenu(): void {
+    this.isLoading = true;
     this.menuService.getMenuItems().subscribe((data) => {
+    this.isLoading = false;
       this.menuItems = data;
     });
   }

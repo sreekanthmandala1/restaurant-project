@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "F:\\restaurant-project\\RestaurantMenuAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\repositories\\menuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:repositories\\menuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\validators\\menuitemvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\services\\imenuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:services\\imenuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\repositories\\menuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:repositories\\menuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\repositories\\imenuitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|f:\\restaurant-project\\restaurantmenuapi\\restaurantmenuapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{407CB6B3-BE61-4D5E-9730-CC929199F9F7}|RestaurantMenuAPI.csproj|solutionrelative:restaurantmenuapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -78,85 +78,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-16T09:29:05.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MenuItemRepository.cs",
-              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Repositories\\MenuItemRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\MenuItemRepository.cs",
-              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Repositories\\MenuItemRepository.cs",
-              "RelativeToolTip": "Repositories\\MenuItemRepository.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:27:06.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IMenuItemService.cs",
-              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\IMenuItemService.cs",
-              "RelativeDocumentMoniker": "Services\\IMenuItemService.cs",
-              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\IMenuItemService.cs",
-              "RelativeToolTip": "Services\\IMenuItemService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:25:20.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MenuItemService.cs",
-              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\MenuItemService.cs",
-              "RelativeDocumentMoniker": "Services\\MenuItemService.cs",
-              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\MenuItemService.cs",
-              "RelativeToolTip": "Services\\MenuItemService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:26:02.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAADwv3cAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:20:20.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-14T07:36:03.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IMenuItemRepository.cs",
               "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Repositories\\IMenuItemRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IMenuItemRepository.cs",
@@ -164,25 +99,11 @@
               "RelativeToolTip": "Repositories\\IMenuItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:22:11.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T07:22:11.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Models\\MenuItem.cs",
-              "RelativeDocumentMoniker": "Models\\MenuItem.cs",
-              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Models\\MenuItem.cs",
-              "RelativeToolTip": "Models\\MenuItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:30:28.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MenuItemValidator.cs",
               "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Validators\\MenuItemValidator.cs",
               "RelativeDocumentMoniker": "Validators\\MenuItemValidator.cs",
@@ -195,7 +116,95 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-16T09:29:05.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuItemRepository.cs",
+              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Repositories\\MenuItemRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\MenuItemRepository.cs",
+              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Repositories\\MenuItemRepository.cs",
+              "RelativeToolTip": "Repositories\\MenuItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:27:06.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAlwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T12:33:55.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:20:20.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuItemService.cs",
+              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\MenuItemService.cs",
+              "RelativeDocumentMoniker": "Services\\MenuItemService.cs",
+              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\MenuItemService.cs",
+              "RelativeToolTip": "Services\\MenuItemService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:26:02.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMenuItemService.cs",
+              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\IMenuItemService.cs",
+              "RelativeDocumentMoniker": "Services\\IMenuItemService.cs",
+              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Services\\IMenuItemService.cs",
+              "RelativeToolTip": "Services\\IMenuItemService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:25:20.31Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Models\\MenuItem.cs",
+              "RelativeDocumentMoniker": "Models\\MenuItem.cs",
+              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Models\\MenuItem.cs",
+              "RelativeToolTip": "Models\\MenuItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:30:28.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "20250214103130_InitialCreate.cs",
               "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Migrations\\20250214103130_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20250214103130_InitialCreate.cs",
@@ -203,12 +212,11 @@
               "RelativeToolTip": "Migrations\\20250214103130_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T10:31:31.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T10:31:31.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ErrorHandlingMiddleware.cs",
               "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Middleware\\ErrorHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\ErrorHandlingMiddleware.cs",
@@ -221,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "log20250215.txt",
               "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\logs\\log20250215.txt",
               "RelativeDocumentMoniker": "logs\\log20250215.txt",
@@ -229,12 +237,11 @@
               "RelativeToolTip": "logs\\log20250215.txt",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-02-16T09:27:54.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T09:27:54.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MenuItemController.cs",
               "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Controllers\\MenuItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\MenuItemController.cs",
@@ -255,21 +262,7 @@
               "RelativeToolTip": "RestaurantMenuAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-14T07:24:07.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "F:\\restaurant-project\\RestaurantMenuAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "F:\\restaurant-project\\RestaurantMenuAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAIAwwBQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T12:33:55.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T07:24:07.036Z"
             },
             {
               "$type": "Document",

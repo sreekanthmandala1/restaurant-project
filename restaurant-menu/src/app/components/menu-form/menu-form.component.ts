@@ -12,8 +12,8 @@ import { MenuListComponent } from '../menu-list/menu-list.component';
 export class MenuFormComponent {
   menuForm: FormGroup;
   @ViewChild(MenuListComponent) menuListComponent!: MenuListComponent;
-  selectedItem : any;
-  updatedItem:any;
+  selectedItem: any;
+  updatedItem: any;
   isLoading: boolean = false;
 
   constructor(
@@ -22,7 +22,7 @@ export class MenuFormComponent {
     private router: Router
   ) {
     this.menuForm = this.fb.group({
-      id:[null],
+      id: [null],
       name: ['', Validators.required],
       description: [''],
       price: ['', [Validators.required, Validators.min(1)]],
@@ -30,6 +30,7 @@ export class MenuFormComponent {
     });
   }
 
+  // Getter Methods for Validation
   get name() {
     return this.menuForm.get('name');
   }
@@ -37,23 +38,28 @@ export class MenuFormComponent {
   get price() {
     return this.menuForm.get('price');
   }
-  get discription() {
-    return this.menuForm.get('discription');
+
+  get description() {
+    return this.menuForm.get('description');
   }
+
   get category() {
     return this.menuForm.get('category');
   }
 
   submitForm(): void {
-    this.isLoading = true;
-    if (this.menuForm.valid) {
-      this.menuService.addOrUpdate(this.menuForm.value).subscribe(() => {
-        this.menuListComponent.loadMenu();
-        this.isLoading = false;
-      });
-      this.menuForm.reset();
-      this.updatedItem = 'save'
+    if (this.menuForm.invalid) {
+      this.menuForm.markAllAsTouched(); // Mark all fields as touched to show errors
+      return;
     }
+
+    this.isLoading = true;
+    this.menuService.addOrUpdate(this.menuForm.value).subscribe(() => {
+      this.menuListComponent.loadMenu();
+      this.isLoading = false;
+      this.menuForm.reset();
+      this.updatedItem = 'save';
+    });
   }
 
   handleMenuItemSelected(menuItem: any) {
@@ -61,7 +67,7 @@ export class MenuFormComponent {
     this.menuForm.patchValue(this.selectedItem);
   }
 
-  updateItemSelected(updatedItem:any){
-    this.updatedItem = updatedItem
+  updateItemSelected(updatedItem: any) {
+    this.updatedItem = updatedItem;
   }
 }

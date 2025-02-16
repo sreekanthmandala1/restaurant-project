@@ -11,18 +11,17 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ? Configure Serilog logging before services
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
-builder.Host.UseSerilog(); // Apply Serilog globally
+builder.Host.UseSerilog(); 
 
-// ? Read JWT key
+
 var key = Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]);
 
-// ? Add authentication & authorization services
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -43,9 +42,9 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddAuthorization(); // ? Authorization should be added after authentication
+builder.Services.AddAuthorization(); 
 
-// ? Register services **before** `builder.Build();`
+
 builder.Services.AddValidatorsFromAssemblyContaining<MenuItemValidator>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
