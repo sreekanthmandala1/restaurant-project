@@ -11,12 +11,7 @@ namespace RestaurantMenuAPI.Repositories
 
         public async Task<IEnumerable<MenuItem>> GetAllAsync() => await _context.MenuItems.ToListAsync();
         public async Task<MenuItem> GetByIdAsync(int id) => await _context.MenuItems.FindAsync(id);
-        //public async Task<MenuItem> AddAsync(MenuItem menuItem)
-        //{
-        //    _context.MenuItems.Add(menuItem);
-        //    await _context.SaveChangesAsync();
-        //    return menuItem;
-        //}
+        
         public async Task<MenuItem> AddOrUpdateAsync(MenuItem menuItem)
         {
             if ( menuItem.Id == null)

@@ -17,8 +17,14 @@ nav {
     text-decoration: underline;
   }
   
-  button {
-    background-color: #ff4d4d; /* Red for logout */
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-btn {
+    margin-left: auto; /* Pushes the button to the right */
+    background-color: #ff4d4d;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -28,7 +34,7 @@ nav {
     transition: background 0.3s ease;
   }
   
-  button:hover {
-    background-color: #cc0000; /* Darker red */
+  .logout-btn:hover {
+    background-color: #cc0000;
   }
   

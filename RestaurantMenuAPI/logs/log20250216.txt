@@ -360,3 +360,729 @@ FROM [MenuItems] AS [m]
 2025-02-16 14:41:26.541 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 42.3537ms
 2025-02-16 14:41:26.541 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
 2025-02-16 14:41:26.542 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 44.9021ms
+2025-02-16 14:45:56.657 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/auth/login - -
+2025-02-16 14:45:56.658 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:45:56.659 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/auth/login - - - 204 - - 3.9550ms
+2025-02-16 14:45:56.681 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/auth/login application/json 42
+2025-02-16 14:45:56.683 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:45:56.683 +05:30 [INF] Executing endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 14:45:56.684 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (RestaurantMenuAPI).
+2025-02-16 14:45:56.685 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-16 14:45:56.687 +05:30 [INF] Executed action AuthController.Login (RestaurantMenuAPI) in 2.8089ms
+2025-02-16 14:45:56.687 +05:30 [INF] Executed endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 14:45:56.688 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/auth/login application/json 42 - 200 - application/json;+charset=utf-8 6.9824ms
+2025-02-16 14:45:56.734 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:45:56.734 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:45:56.739 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 5.1792ms
+2025-02-16 14:45:56.742 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:45:56.743 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:45:56.744 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:45:56.744 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:45:56.744 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:45:56.745 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:45:56.796 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:45:56.799 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:45:56.805 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:45:56.814 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 70.3325ms
+2025-02-16 14:45:56.815 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:45:56.815 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 72.6444ms
+2025-02-16 14:46:19.849 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:46:19.850 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:46:19.850 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 1.2265ms
+2025-02-16 14:46:19.856 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:46:19.857 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:46:19.857 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:46:19.858 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:46:19.858 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:46:19.859 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:46:19.895 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:46:19.899 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:46:19.899 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:46:19.908 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 50.1963ms
+2025-02-16 14:46:19.909 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:46:19.912 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 55.1577ms
+2025-02-16 14:46:27.666 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:46:27.666 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:46:27.667 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.8699ms
+2025-02-16 14:46:27.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:46:27.671 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:46:27.672 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:46:27.672 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:46:27.672 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:46:27.673 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:46:27.679 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:46:27.685 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:46:27.685 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:46:27.686 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 14.1506ms
+2025-02-16 14:46:27.687 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:46:27.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 15.9301ms
+2025-02-16 14:46:52.351 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:46:52.351 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:46:52.352 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.8814ms
+2025-02-16 14:46:52.358 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:46:52.358 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:46:52.360 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:46:52.360 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:46:52.361 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:46:52.362 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:46:52.415 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:46:52.420 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:46:52.420 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:46:52.429 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 67.9643ms
+2025-02-16 14:46:52.429 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:46:52.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 71.2081ms
+2025-02-16 14:47:19.276 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:47:19.277 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:47:19.277 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 1.3559ms
+2025-02-16 14:47:19.281 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:47:19.282 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:47:19.283 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:47:19.283 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:47:19.319 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:47:19.321 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:47:19.345 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:47:19.348 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:47:19.355 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:47:19.360 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 41.6496ms
+2025-02-16 14:47:19.361 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:47:19.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 79.3601ms
+2025-02-16 14:47:56.382 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:47:56.385 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:47:56.386 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 3.6688ms
+2025-02-16 14:47:56.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:47:56.405 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:47:56.408 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:47:56.408 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:47:56.409 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:47:56.417 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:47:56.431 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:47:56.432 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:47:56.432 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:47:56.433 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 24.9574ms
+2025-02-16 14:47:56.434 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:47:56.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 30.5605ms
+2025-02-16 14:48:24.025 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:48:24.028 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:24.028 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 3.7233ms
+2025-02-16 14:48:24.036 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:48:24.037 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:24.039 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:48:24.039 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:48:24.040 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:48:24.041 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:48:24.138 +05:30 [INF] Executed DbCommand (94ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:48:24.149 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:48:24.150 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:48:24.161 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 121.4578ms
+2025-02-16 14:48:24.161 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:48:24.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 125.3402ms
+2025-02-16 14:48:30.047 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:48:30.048 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:30.053 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 6.6059ms
+2025-02-16 14:48:30.063 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:48:30.064 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:30.064 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:48:30.064 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:48:30.064 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:48:30.066 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:48:30.078 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:48:30.078 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:48:30.079 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:48:30.080 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 15.5466ms
+2025-02-16 14:48:30.080 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:48:30.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 16.7310ms
+2025-02-16 14:48:59.806 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/auth/login - -
+2025-02-16 14:48:59.806 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:59.807 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/auth/login - - - 204 - - 1.0248ms
+2025-02-16 14:48:59.811 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/auth/login application/json 42
+2025-02-16 14:48:59.811 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:59.811 +05:30 [INF] Executing endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 14:48:59.812 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (RestaurantMenuAPI).
+2025-02-16 14:48:59.813 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-16 14:48:59.815 +05:30 [INF] Executed action AuthController.Login (RestaurantMenuAPI) in 2.7876ms
+2025-02-16 14:48:59.815 +05:30 [INF] Executed endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 14:48:59.815 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/auth/login application/json 42 - 200 - application/json;+charset=utf-8 4.2150ms
+2025-02-16 14:48:59.844 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:48:59.844 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:59.845 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 1.1070ms
+2025-02-16 14:48:59.849 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:48:59.850 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:48:59.851 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:48:59.851 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:48:59.852 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:48:59.853 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:48:59.878 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:48:59.893 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:48:59.893 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:48:59.908 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 56.4463ms
+2025-02-16 14:48:59.908 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:48:59.909 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 59.4317ms
+2025-02-16 14:51:03.971 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/26 - -
+2025-02-16 14:51:03.972 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:03.972 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/26 - - - 204 - - 0.9826ms
+2025-02-16 14:51:03.987 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:44391/api/MenuItem/26 - -
+2025-02-16 14:51:03.987 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:03.989 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:03.989 +05:30 [INF] Route matched with {action = "Delete", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:51:03.990 +05:30 [INF] Deleting menu item with ID: 26
+2025-02-16 14:51:03.992 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:51:04.030 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+2025-02-16 14:51:04.058 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [MenuItems]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-16 14:51:04.071 +05:30 [INF] Menu item with ID 26 deleted successfully.
+2025-02-16 14:51:04.072 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-02-16 14:51:04.072 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI) in 82.4114ms
+2025-02-16 14:51:04.072 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:04.076 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:44391/api/MenuItem/26 - - - 200 - - 88.6478ms
+2025-02-16 14:51:05.229 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/27 - -
+2025-02-16 14:51:05.230 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:05.230 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/27 - - - 204 - - 0.7150ms
+2025-02-16 14:51:05.245 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:44391/api/MenuItem/27 - -
+2025-02-16 14:51:05.245 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:05.246 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:05.246 +05:30 [INF] Route matched with {action = "Delete", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:51:05.248 +05:30 [INF] Deleting menu item with ID: 27
+2025-02-16 14:51:05.251 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:51:05.262 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+2025-02-16 14:51:05.272 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [MenuItems]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-16 14:51:05.275 +05:30 [INF] Menu item with ID 27 deleted successfully.
+2025-02-16 14:51:05.275 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-02-16 14:51:05.276 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI) in 29.3756ms
+2025-02-16 14:51:05.276 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:05.277 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:44391/api/MenuItem/27 - - - 200 - - 32.5283ms
+2025-02-16 14:51:06.399 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/28 - -
+2025-02-16 14:51:06.400 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:06.400 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/28 - - - 204 - - 0.7762ms
+2025-02-16 14:51:06.405 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:44391/api/MenuItem/28 - -
+2025-02-16 14:51:06.406 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:06.406 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:06.407 +05:30 [INF] Route matched with {action = "Delete", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:51:06.408 +05:30 [INF] Deleting menu item with ID: 28
+2025-02-16 14:51:06.409 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:51:06.424 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+2025-02-16 14:51:06.429 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [MenuItems]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-16 14:51:06.439 +05:30 [INF] Menu item with ID 28 deleted successfully.
+2025-02-16 14:51:06.440 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-02-16 14:51:06.440 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI) in 33.0094ms
+2025-02-16 14:51:06.440 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:06.441 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:44391/api/MenuItem/28 - - - 200 - - 36.1145ms
+2025-02-16 14:51:07.368 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/30 - -
+2025-02-16 14:51:07.369 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:07.369 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/30 - - - 204 - - 0.6749ms
+2025-02-16 14:51:07.375 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:44391/api/MenuItem/30 - -
+2025-02-16 14:51:07.376 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:07.377 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:07.377 +05:30 [INF] Route matched with {action = "Delete", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:51:07.378 +05:30 [INF] Deleting menu item with ID: 30
+2025-02-16 14:51:07.379 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:51:07.387 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+2025-02-16 14:51:07.398 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [MenuItems]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-16 14:51:07.402 +05:30 [INF] Menu item with ID 30 deleted successfully.
+2025-02-16 14:51:07.402 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-02-16 14:51:07.402 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI) in 24.9028ms
+2025-02-16 14:51:07.402 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 14:51:07.404 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:44391/api/MenuItem/30 - - - 200 - - 28.2731ms
+2025-02-16 14:51:51.459 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - -
+2025-02-16 14:51:51.460 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:51.460 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - - - 204 - - 1.0772ms
+2025-02-16 14:51:51.466 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 114
+2025-02-16 14:51:51.466 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:51.467 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:51:51.467 +05:30 [INF] Route matched with {action = "AddOrUpdate", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdate(RestaurantMenuAPI.Models.MenuItem) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:51:51.468 +05:30 [INF] Processing menu item: {"Id":null,"Name":"CheesePizza","Description":"A pizza with veggies and cheese","Price":15.25,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 14:51:51.469 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:51:51.498 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [MenuItems] ([Category], [Description], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [MenuItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-02-16 14:51:51.528 +05:30 [INF] Menu item processed successfully: {"Id":31,"Name":"CheesePizza","Description":"A pizza with veggies and cheese","Price":15.25,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 14:51:51.529 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 14:51:51.530 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI) in 63.1133ms
+2025-02-16 14:51:51.531 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:51:51.532 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 114 - 200 - application/json;+charset=utf-8 65.8819ms
+2025-02-16 14:51:51.539 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:51:51.539 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:51.539 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.7259ms
+2025-02-16 14:51:51.545 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:51:51.545 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:51:51.547 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:51:51.547 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:51:51.548 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:51:51.549 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:51:51.559 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:51:51.563 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:51:51.564 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:51:51.565 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 17.8222ms
+2025-02-16 14:51:51.565 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:51:51.566 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 21.0981ms
+2025-02-16 14:52:44.411 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - -
+2025-02-16 14:52:44.411 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:52:44.413 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - - - 204 - - 1.3030ms
+2025-02-16 14:52:44.417 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 125
+2025-02-16 14:52:44.417 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:52:44.418 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:52:44.419 +05:30 [INF] Route matched with {action = "AddOrUpdate", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdate(RestaurantMenuAPI.Models.MenuItem) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:52:44.420 +05:30 [INF] Processing menu item: {"Id":null,"Name":"ChickenBurger","Description":"A burger with full of chicken and veggies","Price":30.5,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 14:52:44.422 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:52:44.453 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [MenuItems] ([Category], [Description], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [MenuItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-02-16 14:52:44.466 +05:30 [INF] Menu item processed successfully: {"Id":32,"Name":"ChickenBurger","Description":"A burger with full of chicken and veggies","Price":30.5,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 14:52:44.467 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 14:52:44.471 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI) in 51.6582ms
+2025-02-16 14:52:44.471 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:52:44.471 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 125 - 200 - application/json;+charset=utf-8 54.7215ms
+2025-02-16 14:52:44.477 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:52:44.478 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:52:44.478 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 1.0253ms
+2025-02-16 14:52:44.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:52:44.484 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:52:44.484 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:52:44.485 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:52:44.485 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:52:44.486 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:52:44.494 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:52:44.497 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:52:44.497 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:52:44.498 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 13.8507ms
+2025-02-16 14:52:44.499 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:52:44.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 15.8336ms
+2025-02-16 14:54:12.558 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - -
+2025-02-16 14:54:12.558 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:54:12.559 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - - - 204 - - 1.3694ms
+2025-02-16 14:54:12.564 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 117
+2025-02-16 14:54:12.564 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:54:12.565 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:54:12.566 +05:30 [INF] Route matched with {action = "AddOrUpdate", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdate(RestaurantMenuAPI.Models.MenuItem) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:54:12.567 +05:30 [INF] Processing menu item: {"Id":null,"Name":"Mojito","Description":"A mojito with full of lemon and mint","Price":12.65,"Category":"Beverages","$type":"MenuItem"}
+2025-02-16 14:54:12.569 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:54:12.587 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [MenuItems] ([Category], [Description], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [MenuItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-02-16 14:54:12.590 +05:30 [INF] Menu item processed successfully: {"Id":33,"Name":"Mojito","Description":"A mojito with full of lemon and mint","Price":12.65,"Category":"Beverages","$type":"MenuItem"}
+2025-02-16 14:54:12.590 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 14:54:12.591 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI) in 25.6512ms
+2025-02-16 14:54:12.591 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:54:12.592 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 117 - 200 - application/json;+charset=utf-8 28.4733ms
+2025-02-16 14:54:12.597 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:54:12.597 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:54:12.598 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.7860ms
+2025-02-16 14:54:12.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:54:12.601 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:54:12.602 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:54:12.602 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:54:12.603 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:54:12.605 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:54:12.616 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:54:12.620 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:54:12.626 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:54:12.632 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 29.4124ms
+2025-02-16 14:54:12.632 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:54:12.633 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 31.6659ms
+2025-02-16 14:55:58.610 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - -
+2025-02-16 14:55:58.613 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:55:58.614 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - - - 204 - - 4.1653ms
+2025-02-16 14:55:58.624 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 144
+2025-02-16 14:55:58.624 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:55:58.628 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:55:58.628 +05:30 [INF] Route matched with {action = "AddOrUpdate", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdate(RestaurantMenuAPI.Models.MenuItem) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:55:58.629 +05:30 [INF] Processing menu item: {"Id":null,"Name":"Chicken Dum Biryani","Description":"serves two members sufficiently with 2 leg pieces ","Price":150,"Category":"Main course","$type":"MenuItem"}
+2025-02-16 14:55:58.631 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:55:58.662 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [MenuItems] ([Category], [Description], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [MenuItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-02-16 14:55:58.664 +05:30 [INF] Menu item processed successfully: {"Id":34,"Name":"Chicken Dum Biryani","Description":"serves two members sufficiently with 2 leg pieces ","Price":150,"Category":"Main course","$type":"MenuItem"}
+2025-02-16 14:55:58.665 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 14:55:58.667 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI) in 38.7291ms
+2025-02-16 14:55:58.667 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:55:58.668 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 144 - 200 - application/json;+charset=utf-8 43.9340ms
+2025-02-16 14:55:58.675 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:55:58.675 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:55:58.676 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 1.1539ms
+2025-02-16 14:55:58.680 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:55:58.680 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:55:58.681 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:55:58.681 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:55:58.682 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:55:58.683 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:55:58.695 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:55:58.698 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:55:58.704 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:55:58.710 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 28.0701ms
+2025-02-16 14:55:58.710 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:55:58.710 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 30.3340ms
+2025-02-16 14:56:12.726 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/33 - -
+2025-02-16 14:56:12.727 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:56:12.727 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/33 - - - 204 - - 0.7324ms
+2025-02-16 14:56:12.734 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem/33 - -
+2025-02-16 14:56:12.735 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:56:12.735 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetById (RestaurantMenuAPI)'
+2025-02-16 14:56:12.736 +05:30 [INF] Route matched with {action = "GetById", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:56:12.736 +05:30 [INF] Fetching menu item with ID: 33
+2025-02-16 14:56:12.737 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:56:12.769 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+2025-02-16 14:56:12.770 +05:30 [INF] Successfully fetched menu item: {"Id":33,"Name":"Mojito","Description":"A mojito with full of lemon and mint","Price":12.65,"Category":"Beverages","$type":"MenuItem"}
+2025-02-16 14:56:12.770 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 14:56:12.780 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetById (RestaurantMenuAPI) in 44.1916ms
+2025-02-16 14:56:12.780 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetById (RestaurantMenuAPI)'
+2025-02-16 14:56:12.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem/33 - - - 200 - application/json;+charset=utf-8 46.3459ms
+2025-02-16 14:56:27.843 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - -
+2025-02-16 14:56:27.844 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:56:27.844 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - - - 204 - - 1.0425ms
+2025-02-16 14:56:27.848 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 121
+2025-02-16 14:56:27.848 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:56:27.849 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:56:27.850 +05:30 [INF] Route matched with {action = "AddOrUpdate", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdate(RestaurantMenuAPI.Models.MenuItem) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:56:27.851 +05:30 [INF] Processing menu item: {"Id":33,"Name":"Fresh Mojito","Description":"A mojito with full of lemon and mint","Price":12.65,"Category":"Beverages","$type":"MenuItem"}
+2025-02-16 14:56:27.852 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:56:27.866 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__menuItem_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__menuItem_Id_0
+2025-02-16 14:56:27.877 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [MenuItems] SET [Category] = @p0, [Description] = @p1, [Name] = @p2, [Price] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+2025-02-16 14:56:27.880 +05:30 [INF] Menu item processed successfully: {"Id":33,"Name":"Fresh Mojito","Description":"A mojito with full of lemon and mint","Price":12.65,"Category":"Beverages","$type":"MenuItem"}
+2025-02-16 14:56:27.880 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 14:56:27.882 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI) in 31.6598ms
+2025-02-16 14:56:27.882 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 14:56:27.883 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 121 - 200 - application/json;+charset=utf-8 35.1919ms
+2025-02-16 14:56:27.895 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 14:56:27.895 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:56:27.896 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.7473ms
+2025-02-16 14:56:27.900 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 14:56:27.901 +05:30 [INF] CORS policy execution successful.
+2025-02-16 14:56:27.902 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:56:27.902 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 14:56:27.902 +05:30 [INF] Fetching all menu items...
+2025-02-16 14:56:27.904 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 14:56:27.911 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 14:56:27.915 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 14:56:27.916 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 14:56:27.917 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 14.5281ms
+2025-02-16 14:56:27.917 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 14:56:27.917 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 17.3167ms
+2025-02-16 15:07:01.716 +05:30 [INF] User profile is available. Using 'C:\Users\sreek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-16 15:07:02.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - -
+2025-02-16 15:07:02.901 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-16 15:07:02.902 +05:30 [INF] Hosting environment: Development
+2025-02-16 15:07:02.902 +05:30 [INF] Content root path: F:\restaurant-project\RestaurantMenuAPI\
+2025-02-16 15:07:03.264 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - -
+2025-02-16 15:07:03.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - - - 301 - - 881.5531ms
+2025-02-16 15:07:03.559 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - - - 200 - text/html;charset=utf-8 287.8401ms
+2025-02-16 15:07:03.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/swagger-ui.css - -
+2025-02-16 15:07:03.588 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/swagger-ui-bundle.js - -
+2025-02-16 15:07:03.590 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/swagger-ui-standalone-preset.js - -
+2025-02-16 15:07:03.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - -
+2025-02-16 15:07:03.613 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - -
+2025-02-16 15:07:03.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 22.9718ms
+2025-02-16 15:07:03.676 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-02-16 15:07:03.679 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-02-16 15:07:03.686 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-02-16 15:07:03.693 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/swagger-ui.css - - - 200 144929 text/css 123.6824ms
+2025-02-16 15:07:03.697 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 106.8168ms
+2025-02-16 15:07:03.725 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 137.2343ms
+2025-02-16 15:07:03.812 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 217.4893ms
+2025-02-16 15:07:04.054 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - -
+2025-02-16 15:07:04.088 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - -
+2025-02-16 15:07:04.092 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-02-16 15:07:04.092 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - - - 200 628 image/png 3.8976ms
+2025-02-16 15:07:04.384 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 330.6307ms
+2025-02-16 15:08:09.663 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/auth/login - -
+2025-02-16 15:08:09.680 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:08:09.690 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/auth/login - - - 204 - - 27.1834ms
+2025-02-16 15:08:09.695 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/auth/login application/json 42
+2025-02-16 15:08:09.696 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:08:13.999 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/auth/login application/json 42
+2025-02-16 15:08:14.009 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:08:15.273 +05:30 [INF] Executing endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:08:15.274 +05:30 [INF] Executing endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:08:15.468 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (RestaurantMenuAPI).
+2025-02-16 15:08:15.467 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (RestaurantMenuAPI).
+2025-02-16 15:08:15.496 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/auth/login - -
+2025-02-16 15:08:15.497 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:08:15.497 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/auth/login - - - 204 - - 0.7743ms
+2025-02-16 15:08:15.501 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/auth/login application/json 42
+2025-02-16 15:08:15.502 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:08:15.517 +05:30 [INF] Executing endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:08:15.517 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (RestaurantMenuAPI).
+2025-02-16 15:08:16.417 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-16 15:08:16.418 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-16 15:08:16.417 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-16 15:08:16.465 +05:30 [INF] Executed action AuthController.Login (RestaurantMenuAPI) in 968.105ms
+2025-02-16 15:08:16.465 +05:30 [INF] Executed action AuthController.Login (RestaurantMenuAPI) in 924.1831ms
+2025-02-16 15:08:16.465 +05:30 [INF] Executed action AuthController.Login (RestaurantMenuAPI) in 967.652ms
+2025-02-16 15:08:16.491 +05:30 [INF] Executed endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:08:16.491 +05:30 [INF] Executed endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:08:16.491 +05:30 [INF] Executed endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:08:16.492 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/auth/login application/json 42 - 200 - application/json;+charset=utf-8 2492.3645ms
+2025-02-16 15:08:16.492 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/auth/login application/json 42 - 200 - application/json;+charset=utf-8 990.9165ms
+2025-02-16 15:08:16.492 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/auth/login application/json 42 - 200 - application/json;+charset=utf-8 6797.1612ms
+2025-02-16 15:08:16.532 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 15:08:16.533 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:08:16.534 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 2.6010ms
+2025-02-16 15:08:16.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 15:08:16.539 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:08:17.052 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:08:17.130 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:08:21.207 +05:30 [INF] Fetching all menu items...
+2025-02-16 15:08:25.412 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'MenuItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-16 15:08:26.086 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:08:32.838 +05:30 [INF] Executed DbCommand (399ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 15:08:33.824 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 15:08:33.837 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 15:08:33.873 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 16741.7951ms
+2025-02-16 15:08:33.876 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:08:33.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 17408.7799ms
+2025-02-16 15:09:01.618 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/auth/login - -
+2025-02-16 15:09:01.618 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:01.618 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/auth/login - - - 204 - - 0.7406ms
+2025-02-16 15:09:01.623 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/auth/login application/json 42
+2025-02-16 15:09:01.623 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:01.624 +05:30 [INF] Executing endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:09:01.624 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (RestaurantMenuAPI).
+2025-02-16 15:09:01.625 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-16 15:09:01.626 +05:30 [INF] Executed action AuthController.Login (RestaurantMenuAPI) in 2.2052ms
+2025-02-16 15:09:01.627 +05:30 [INF] Executed endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:09:01.628 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/auth/login application/json 42 - 200 - application/json;+charset=utf-8 4.3314ms
+2025-02-16 15:09:01.650 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 15:09:01.650 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:01.651 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 1.0276ms
+2025-02-16 15:09:01.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 15:09:01.656 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:01.664 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:09:01.667 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:09:01.713 +05:30 [INF] Fetching all menu items...
+2025-02-16 15:09:01.779 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:09:01.832 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 15:09:01.833 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 15:09:01.834 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 15:09:01.835 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 166.6747ms
+2025-02-16 15:09:01.835 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:09:01.836 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 180.0291ms
+2025-02-16 15:09:48.619 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - -
+2025-02-16 15:09:48.620 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:48.623 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - - - 204 - - 3.1373ms
+2025-02-16 15:09:48.628 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 92
+2025-02-16 15:09:48.628 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:48.630 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 15:09:48.640 +05:30 [INF] Route matched with {action = "AddOrUpdate", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdate(RestaurantMenuAPI.Models.MenuItem) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:09:48.701 +05:30 [INF] Processing menu item: {"Id":null,"Name":"Samosa","Description":"A veg snack item","Price":5.2,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 15:09:49.131 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:09:52.764 +05:30 [INF] Executed DbCommand (1,026ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [MenuItems] ([Category], [Description], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [MenuItems]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2025-02-16 15:09:53.789 +05:30 [INF] Menu item processed successfully: {"Id":35,"Name":"Samosa","Description":"A veg snack item","Price":5.2,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 15:09:53.789 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 15:09:53.800 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI) in 5159.417ms
+2025-02-16 15:09:53.800 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 15:09:53.810 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 92 - 200 - application/json;+charset=utf-8 5182.0384ms
+2025-02-16 15:09:53.819 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 15:09:53.820 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:53.820 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.7545ms
+2025-02-16 15:09:53.825 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 15:09:53.825 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:09:53.826 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:09:53.826 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:09:53.826 +05:30 [INF] Fetching all menu items...
+2025-02-16 15:09:53.827 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:09:53.915 +05:30 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 15:09:53.916 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 15:09:53.916 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 15:09:53.917 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 90.9301ms
+2025-02-16 15:09:53.917 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:09:53.917 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 92.4073ms
+2025-02-16 15:10:02.266 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/31 - -
+2025-02-16 15:10:02.267 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:02.267 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/31 - - - 204 - - 0.6874ms
+2025-02-16 15:10:02.272 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem/31 - -
+2025-02-16 15:10:02.273 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:02.273 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetById (RestaurantMenuAPI)'
+2025-02-16 15:10:02.292 +05:30 [INF] Route matched with {action = "GetById", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:10:02.298 +05:30 [INF] Fetching menu item with ID: 31
+2025-02-16 15:10:02.304 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:10:03.033 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+2025-02-16 15:10:03.071 +05:30 [INF] Successfully fetched menu item: {"Id":31,"Name":"CheesePizza","Description":"A pizza with veggies and cheese","Price":15.25,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 15:10:03.071 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 15:10:03.073 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetById (RestaurantMenuAPI) in 779.7846ms
+2025-02-16 15:10:03.073 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetById (RestaurantMenuAPI)'
+2025-02-16 15:10:03.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem/31 - - - 200 - application/json;+charset=utf-8 802.3181ms
+2025-02-16 15:10:16.965 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - -
+2025-02-16 15:10:16.965 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:16.965 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/addOrUpdate - - - 204 - - 0.8099ms
+2025-02-16 15:10:16.969 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 115
+2025-02-16 15:10:16.969 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:16.970 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 15:10:16.970 +05:30 [INF] Route matched with {action = "AddOrUpdate", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddOrUpdate(RestaurantMenuAPI.Models.MenuItem) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:10:16.975 +05:30 [INF] Processing menu item: {"Id":31,"Name":"VegCheesePizza","Description":"A pizza with veggies and cheese","Price":25.25,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 15:10:16.978 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:10:17.045 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__menuItem_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__menuItem_Id_0
+2025-02-16 15:10:17.083 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [MenuItems] SET [Category] = @p0, [Description] = @p1, [Name] = @p2, [Price] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+2025-02-16 15:10:17.091 +05:30 [INF] Menu item processed successfully: {"Id":31,"Name":"VegCheesePizza","Description":"A pizza with veggies and cheese","Price":25.25,"Category":"Snacks","$type":"MenuItem"}
+2025-02-16 15:10:17.091 +05:30 [INF] Executing OkObjectResult, writing value of type 'RestaurantMenuAPI.Models.MenuItem'.
+2025-02-16 15:10:17.093 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI) in 122.3873ms
+2025-02-16 15:10:17.093 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.AddOrUpdate (RestaurantMenuAPI)'
+2025-02-16 15:10:17.094 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/MenuItem/addOrUpdate application/json 115 - 200 - application/json;+charset=utf-8 124.8551ms
+2025-02-16 15:10:17.098 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 15:10:17.098 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:17.099 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.8378ms
+2025-02-16 15:10:17.102 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 15:10:17.103 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:17.104 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:10:17.104 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:10:17.104 +05:30 [INF] Fetching all menu items...
+2025-02-16 15:10:17.106 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:10:17.115 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 15:10:17.116 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 15:10:17.116 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 15:10:17.118 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 13.7257ms
+2025-02-16 15:10:17.118 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:10:17.118 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 16.1196ms
+2025-02-16 15:10:27.668 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/35 - -
+2025-02-16 15:10:27.669 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:27.671 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem/35 - - - 204 - - 3.1017ms
+2025-02-16 15:10:27.673 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:44391/api/MenuItem/35 - -
+2025-02-16 15:10:27.676 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:10:27.678 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 15:10:27.713 +05:30 [INF] Route matched with {action = "Delete", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:10:27.717 +05:30 [INF] Deleting menu item with ID: 35
+2025-02-16 15:10:27.723 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:10:27.739 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+WHERE [m].[Id] = @__p_0
+2025-02-16 15:10:27.797 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [MenuItems]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-16 15:10:27.820 +05:30 [INF] Menu item with ID 35 deleted successfully.
+2025-02-16 15:10:27.838 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-02-16 15:10:27.838 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI) in 125.0166ms
+2025-02-16 15:10:27.838 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.Delete (RestaurantMenuAPI)'
+2025-02-16 15:10:27.840 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:44391/api/MenuItem/35 - - - 200 - - 166.8136ms
+2025-02-16 15:14:18.633 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/auth/login - -
+2025-02-16 15:14:18.634 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:14:18.634 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/auth/login - - - 204 - - 0.8481ms
+2025-02-16 15:14:18.642 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44391/api/auth/login application/json 42
+2025-02-16 15:14:18.642 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:14:18.642 +05:30 [INF] Executing endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:14:18.643 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller AuthController (RestaurantMenuAPI).
+2025-02-16 15:14:18.643 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-16 15:14:18.645 +05:30 [INF] Executed action AuthController.Login (RestaurantMenuAPI) in 1.8454ms
+2025-02-16 15:14:18.645 +05:30 [INF] Executed endpoint 'AuthController.Login (RestaurantMenuAPI)'
+2025-02-16 15:14:18.646 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44391/api/auth/login application/json 42 - 200 - application/json;+charset=utf-8 3.6741ms
+2025-02-16 15:14:18.672 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - -
+2025-02-16 15:14:18.672 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:14:18.672 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44391/api/MenuItem - - - 204 - - 0.7781ms
+2025-02-16 15:14:18.678 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/api/MenuItem - -
+2025-02-16 15:14:18.679 +05:30 [INF] CORS policy execution successful.
+2025-02-16 15:14:18.679 +05:30 [INF] Executing endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:14:18.680 +05:30 [INF] Route matched with {action = "GetAll", controller = "MenuItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller RestaurantMenuAPI.Controllers.MenuItemController (RestaurantMenuAPI).
+2025-02-16 15:14:18.680 +05:30 [INF] Fetching all menu items...
+2025-02-16 15:14:18.684 +05:30 [INF] Entity Framework Core 6.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-02-16 15:14:18.798 +05:30 [INF] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Category], [m].[Description], [m].[Name], [m].[Price]
+FROM [MenuItems] AS [m]
+2025-02-16 15:14:18.799 +05:30 [INF] Successfully fetched menu items.
+2025-02-16 15:14:18.799 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RestaurantMenuAPI.Models.MenuItem, RestaurantMenuAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-16 15:14:18.867 +05:30 [INF] Executed action RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI) in 186.9734ms
+2025-02-16 15:14:18.867 +05:30 [INF] Executed endpoint 'RestaurantMenuAPI.Controllers.MenuItemController.GetAll (RestaurantMenuAPI)'
+2025-02-16 15:14:18.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/api/MenuItem - - - 200 - application/json;+charset=utf-8 188.7536ms

@@ -1,0 +1,11 @@
+USE RestaurantDB;
+
+
+
+CREATE TABLE MenuItems (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(1000) NULL,
+    Price DECIMAL(10,2) NOT NULL CHECK (Price > 0),
+    Category NVARCHAR(100) NOT NULL
+);

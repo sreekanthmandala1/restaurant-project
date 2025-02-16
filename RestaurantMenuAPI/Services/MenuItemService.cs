@@ -22,14 +22,6 @@ namespace RestaurantMenuAPI.Services
             return await _menuItemRepository.GetByIdAsync(id);
         }
 
-        //public async Task<MenuItem> AddAsync(MenuItem menuItem)
-        //{
-        //    // Example business logic before saving
-        //    if (string.IsNullOrEmpty(menuItem.Name))
-        //        throw new ArgumentException("Menu Item name cannot be empty");
-
-        //    return await _menuItemRepository.AddAsync(menuItem);
-        //}
         public async Task<MenuItem> AddOrUpdateAsync(MenuItem menuItem)
         {
             if (string.IsNullOrWhiteSpace(menuItem.Name))

@@ -58,7 +58,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Restaurant Menu API", Version = "v1" });
 
-    // ?? Add JWT Authentication to Swagger
+    
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -85,11 +85,11 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// ? Register dependency injection
+
 builder.Services.AddScoped<IMenuItemRepository, MenuItemRepository>();
 builder.Services.AddScoped<IMenuItemService, MenuItemService>();
 
-// ? Configure CORS policy before building the app
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
@@ -98,26 +98,25 @@ builder.Services.AddCors(options =>
                         .AllowAnyHeader());
 });
 
-// ? Build application
+
 var app = builder.Build();
 
-// ? Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// ? Apply middleware in correct order
+
 app.UseHttpsRedirection();
 
-app.UseCors("AllowAllOrigins"); // ? CORS should be applied before authentication
+app.UseCors("AllowAllOrigins");
 
-app.UseRouting(); // ? Ensure routing is applied before authentication & authorization
+app.UseRouting();
 
-app.UseAuthentication(); // ? Authentication before Authorization
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers(); // ? Controllers should be mapped after auth middleware
+app.MapControllers(); 
 
 app.Run();
