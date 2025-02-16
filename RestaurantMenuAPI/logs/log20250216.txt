@@ -1,0 +1,14 @@
+2025-02-16 13:48:36.905 +05:30 [INF] User profile is available. Using 'C:\Users\sreek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-16 13:48:37.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - -
+2025-02-16 13:48:37.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - -
+2025-02-16 13:48:38.030 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 367.1224ms
+2025-02-16 13:48:38.865 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-16 13:48:38.867 +05:30 [INF] Hosting environment: Development
+2025-02-16 13:48:38.867 +05:30 [INF] Content root path: F:\restaurant-project\RestaurantMenuAPI\
+2025-02-16 13:48:39.877 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - - - 200 - text/html;charset=utf-8 2271.9626ms
+2025-02-16 13:48:41.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - -
+2025-02-16 13:48:41.513 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 2.0407ms
+2025-02-16 13:48:41.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/_vs/browserLink - -
+2025-02-16 13:48:42.024 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 161.5874ms
+2025-02-16 13:49:01.890 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - -
+2025-02-16 13:49:02.217 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 327.1307ms
